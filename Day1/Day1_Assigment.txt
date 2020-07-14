@@ -1,0 +1,81 @@
+Question 1 :
+Explore and explain the various methods in console function
+Explain them
+Ex. console.log()
+
+Assignment :
+
+            console.log(): For output of logging information
+            console.error(): to print errors on console
+            console.warn(): to print warnings on web page
+            console.clear(): to clear content on console.
+            console.time(): to print start time
+            console.timeend(): to print the ned time of loop
+            console.timelog() :to print the log time
+            console.exception(): to print exception on console.
+            console.table(): to print output in form of table
+            console.info(): to print some output on console
+
+
+
+Question2:
+Difference between var let and const:
+
+                Var: 
+                    its used to define variable in java script 
+                    Scope of var:  var declarations are globally scoped or function/locally scoped.
+                    It can be easily edited or altered
+
+                    eg:     var namaste = "hey hi";
+                        var times = 4;
+
+                        if (times > 3) {
+                            var namaste = "say Hello instead"; 
+                        }
+                        
+                        console.log(namaste) // "say Hello instead"
+
+                Let:
+                    A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+                    So a variable declared in a block with let  is only available for use within that block. 
+
+                    eg:
+                    let namaste = "say Hi";
+                    let times = 4;
+
+                    if (times > 3) {
+                            let hello = "say Hello instead";
+                            console.log(hello);// "say Hello instead"
+                        }
+                    console.log(hello) // hello is not defined
+
+                    let is new and better way of initialising variables to reduce ambiquity while writing code.
+
+                    Just like var,  a variable declared with let can be updated within its scope. Unlike var, a let variable cannot be re-declared within its scope. 
+
+                const:
+                    Variables declared with the const maintain constant values, value once declared cant be updated / redeclared
+                    we need to assign value as when declared.
+
+                    const greeting = "say Hi";
+                    greeting = "say Hello instead";// error: Assignment to constant variable. 
+
+
+Question 3 :
+Write a brief intro on available data types in Javascript
+
+                available data types in java script:
+
+                Six Data Types that are primitives,
+                                undefined 
+                                Boolean 
+                                Number 
+                                String 
+                                BigInt 
+                                Symbol 
+                null : "object". Special primitive type having additional usage for it's value: if object is not inherited, then null is shown;
+                Object  "object".  object instance also used as data structures: new Object
+                Function non data structure,  "function". 
+
+
+
