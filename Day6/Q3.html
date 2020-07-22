@@ -1,0 +1,76 @@
+<!-- Question 3:
+Make a webpage that will ask the name of the user. Then will display a welcome message on the
+webpage. Also the webpage should also have a clock.
+Using the toggle method of classList add a dark mode feature to the website. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        h1 { 
+            color: green; 
+        } 
+                
+        /* toggle in label designing */ 
+        .toggle { 
+            position : relative ; 
+            display : inline-block; 
+            width : 100px; 
+            height : 52px; 
+            background-color: red; 
+            border-radius: 30px; 
+            border: 2px solid gray; 
+        } 
+                
+        /* After slide changes */ 
+        .toggle:after { 
+            content: ''; 
+            position: absolute; 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            background-color: gray; 
+            top: 1px;  
+            left: 1px; 
+            transition:  all 0.5s; 
+        } 
+                
+        /* Toggle text */ 
+        p { 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: bold; 
+        } 
+                
+        /* Checkbox cheked effect */ 
+        .checkbox:checked + .toggle::after { 
+            left : 49px;  
+        } 
+                
+        /* Checkbox cheked toggle label bg color */ 
+        .checkbox:checked + .toggle { 
+            background-color: green; 
+        } 
+                
+        /* Checkbox vanished */ 
+        .checkbox {  
+            display : none; 
+        } 
+    </style>
+</head>
+<body>
+    <b>Toggle switch to Dark mode</b> 
+    <br><br> 
+    <label for="switch" class="toggle"> 
+        <p>OFF                ON</p> 
+    </label> 
+    <h4> Question 3</h4>
+    <h4 id= "clock"></h4>
+    <script src="Scripts/q3.js">
+    </script>
+</body>
+</html>
